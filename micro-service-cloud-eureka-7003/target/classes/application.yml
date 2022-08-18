@@ -1,0 +1,13 @@
+server:
+  port: 7003
+
+eureka:
+  instance:
+    hostname: localhost
+
+  client:
+    register-with-eureka: false # disable registration with eureka
+    fetch-registry: false # disable fetching registry from eureka
+    service-url:
+      defaultZone: http://localhost:7002/eureka,http://localhost:7001/eureka
+      #集群版 将当前的 Eureka Server 注册到 7003 和 7003 上，形成一组互相注册的 Eureka Server 集群

@@ -1,0 +1,14 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: false #服务消费者可以不向服务注册中心注册服务
+    service-url:
+      defaultZone: http://localhost:7001/eureka/ #服务注册中心地址
+    fetch-registry: true  #服务消费者客户端需要去检索服务
+
+logging:
+  level:
+    #feign 日志以什么样的级别监控该接口
+    net.biancheng.c.service.DeptFeignService: debug
