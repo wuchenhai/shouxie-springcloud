@@ -15,6 +15,7 @@
         <module>micro-service-cloud-consumer-dept-feign</module>
         <module>micro-service-cloud-provider-dept-hystrix-8005</module>
         <module>micro-service-cloud-gateway-9527</module>
+        <module>micro-service-cloud-config-center-3344</module>
     </modules>
     <dependencies>
         <dependency>
